@@ -1,0 +1,16 @@
+version: '3'
+services:
+  redis-server:
+    image: redis:latest
+    volumes: 
+      - redis_data:/data
+  ai-server:
+    build: ./
+    ports: 
+      - "9000:8000"
+    volumes:
+      - ./:/aiserver
+    environment:
+      - REDIS_URL=redis://@redis-server:6379
+volumes:
+  redis_data:

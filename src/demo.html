@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma 第一个月</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'PingFang SC', sans-serif;
+            background: linear-gradient(180deg, #CFDDF4 0%, #CEDEF2 54%, #CEE0FB 69%, #C9DCF8 86%, #FFFFFF 100%);
+        }
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 0 10px;
+            height: 44px;
+        }
+        .time {
+            font-weight: 600;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 5px 11.4px rgba(24, 82, 219, 0.25);
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        .card-header, .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .card-content {
+            margin-top: 15px;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        .button {
+            background-color: #2169FB;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 20px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="time">9:41</div>
+        <div>Signal</div>
+        <div>Battery</div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">待出行订单</div>
+                <div>检票口：5A</div>
+            </div>
+            <div class="card-content">
+                <div>取票号：E234738632743</div>
+                <div>时间：12月20日</div>
+            </div>
+            <div class="card-footer">
+                <button class="button">购买</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">全部订单</div>
+                <div>检票口：5A</div>
+            </div>
+            <div class="card-content">
+                <div>取票号：E234738632743</div>
+                <div>时间：12月20日</div>
+            </div>
+            <div class="card-footer">
+                <button class="button">购买</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
